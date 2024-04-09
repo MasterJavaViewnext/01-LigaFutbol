@@ -10,11 +10,12 @@ import es.rodal.LigaFutbol.models.Liga;
 import es.rodal.LigaFutbol.models.Partido;
 
 @SpringBootApplication
-public class LigaFutbolApplication {
+public class App {
 
 	public static void main(String[] args) {
 
 		//SpringApplication.run(LigaFutbolApplication.class, args);
+		SpringApplication.run(App.class, args);
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		Liga liga = (Liga) context.getBean("liga");
